@@ -149,4 +149,10 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/VulkanContext.cpp.obj: \
  C:/mingw64/include/c++/16.1.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/16.1.0/bits/stl_vector.h \
  C:/mingw64/include/c++/16.1.0/bits/stl_bvector.h \
- C:/mingw64/include/c++/16.1.0/bits/vector.tcc
+ C:/mingw64/include/c++/16.1.0/bits/vector.tcc \
+ C:/mingw64/include/c++/16.1.0/set \
+ C:/mingw64/include/c++/16.1.0/bits/stl_tree.h \
+ C:/mingw64/include/c++/16.1.0/ext/aligned_buffer.h \
+ C:/mingw64/include/c++/16.1.0/bits/node_handle.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_set.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_multiset.h
