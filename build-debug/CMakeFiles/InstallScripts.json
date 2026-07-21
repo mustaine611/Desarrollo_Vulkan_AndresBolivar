@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/andre/experimetos_vulkan/build-debug/cmake_install.cmake",
+		"C:/Users/andre/experimetos_vulkan/build-debug/external/glfw-3.4/cmake_install.cmake",
+		"C:/Users/andre/experimetos_vulkan/build-debug/external/glfw-3.4/src/cmake_install.cmake",
+		"C:/Users/andre/experimetos_vulkan/build-debug/external/glfw-3.4/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <vector>
 #include <set>
+#include <cstring>
 
 void VulkanContext::initialize(GLFWwindow* window)
 {
@@ -107,10 +108,12 @@ bool VulkanContext::isDeviceSuitable(VkPhysicalDevice device)
 {
     QueueFamilyIndices indices = findQueueFamilies(device);
 
-    return indices.isComplete();
+    return indices.isComplete() &&
+       checkDeviceExtensionSupport(device);
 }
 
 VulkanContext::QueueFamilyIndices
+
 VulkanContext::findQueueFamilies(VkPhysicalDevice device)
 {
     QueueFamilyIndices indices;
@@ -151,6 +154,39 @@ VulkanContext::findQueueFamilies(VkPhysicalDevice device)
     return indices;
 }
 
+bool VulkanContext::checkDeviceExtensionSupport(VkPhysicalDevice device)
+{
+    uint32_t extensionCount = 0;
+
+    vkEnumerateDeviceExtensionProperties(
+        device,
+        nullptr,
+        &extensionCount,
+        nullptr
+    );
+
+    std::vector<VkExtensionProperties> availableExtensions(extensionCount);
+
+    vkEnumerateDeviceExtensionProperties(
+        device,
+        nullptr,
+        &extensionCount,
+        availableExtensions.data()
+    );
+
+    for (const auto& extension : availableExtensions)
+    {
+        if (strcmp(
+                extension.extensionName,
+                VK_KHR_SWAPCHAIN_EXTENSION_NAME) == 0)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 void VulkanContext::createLogicalDevice()
 {
     QueueFamilyIndices indices = findQueueFamilies(physicalDevice);
@@ -166,6 +202,11 @@ void VulkanContext::createLogicalDevice()
 
     VkPhysicalDeviceFeatures deviceFeatures{};
 
+    std::vector<const char*> deviceExtensions =
+    {
+        VK_KHR_SWAPCHAIN_EXTENSION_NAME
+    };
+
     VkDeviceCreateInfo createInfo{};
 
     createInfo.sType = VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO;
@@ -173,7 +214,12 @@ void VulkanContext::createLogicalDevice()
     createInfo.queueCreateInfoCount = 1;
     createInfo.pEnabledFeatures = &deviceFeatures;
 
-    createInfo.enabledExtensionCount = 0;
+    createInfo.enabledExtensionCount =
+    static_cast<uint32_t>(deviceExtensions.size());
+
+    createInfo.ppEnabledExtensionNames =
+    deviceExtensions.data();
+
     createInfo.enabledLayerCount = 0;
 
     if (vkCreateDevice(

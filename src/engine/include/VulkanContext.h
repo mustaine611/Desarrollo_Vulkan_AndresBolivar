@@ -3,6 +3,7 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <optional>
+#include "SwapChain.h"
 
 class VulkanContext
 {
@@ -28,6 +29,7 @@ private:
     void createLogicalDevice();
     bool isDeviceSuitable(VkPhysicalDevice device);
     QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
+    bool checkDeviceExtensionSupport(VkPhysicalDevice device);
 
 private:
     VkInstance instance = VK_NULL_HANDLE;
@@ -36,4 +38,5 @@ private:
 
     VkDevice device = VK_NULL_HANDLE;
     VkQueue graphicsQueue = VK_NULL_HANDLE;
+    SwapChain swapChain;
 };

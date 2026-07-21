@@ -66,11 +66,48 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj: \
  C:/mingw64/include/c++/16.1.0/bits/utility.h \
  C:/mingw64/include/c++/16.1.0/compare \
  C:/mingw64/include/c++/16.1.0/bits/invoke.h \
+ C:/Users/andre/experimetos_vulkan/src/engine/include/SwapChain.h \
+ C:/mingw64/include/c++/16.1.0/vector \
+ C:/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_algobase.h \
+ C:/mingw64/include/c++/16.1.0/bits/cpp_type_traits.h \
+ C:/mingw64/include/c++/16.1.0/ext/type_traits.h \
+ C:/mingw64/include/c++/16.1.0/ext/numeric_traits.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_pair.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_iterator.h \
+ C:/mingw64/include/c++/16.1.0/debug/debug.h \
+ C:/mingw64/include/c++/16.1.0/bits/predefined_ops.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_function.h \
+ C:/mingw64/include/c++/16.1.0/backward/binders.h \
+ C:/mingw64/include/c++/16.1.0/bit \
+ C:/mingw64/include/c++/16.1.0/bits/allocator.h \
+ C:/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/mingw64/include/c++/16.1.0/bits/new_allocator.h \
+ C:/mingw64/include/c++/16.1.0/bits/new_throw.h \
+ C:/mingw64/include/c++/16.1.0/bits/memoryfwd.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_uninitialized.h \
+ C:/mingw64/include/c++/16.1.0/ext/alloc_traits.h \
+ C:/mingw64/include/c++/16.1.0/bits/alloc_traits.h \
+ C:/mingw64/include/c++/16.1.0/bits/stl_vector.h \
+ C:/mingw64/include/c++/16.1.0/bits/stdexcept_throw.h \
+ C:/mingw64/include/c++/16.1.0/bits/stdexcept_throwfwd.h \
+ C:/mingw64/include/c++/16.1.0/bits/ranges_base.h \
+ C:/mingw64/include/c++/16.1.0/bits/max_size_type.h \
+ C:/mingw64/include/c++/16.1.0/numbers \
+ C:/mingw64/include/c++/16.1.0/limits \
+ C:/mingw64/include/c++/16.1.0/bits/stl_bvector.h \
+ C:/mingw64/include/c++/16.1.0/bits/range_access.h \
+ C:/mingw64/include/c++/16.1.0/bits/erase_if.h \
+ C:/mingw64/include/c++/16.1.0/bits/vector.tcc \
+ C:/mingw64/include/c++/16.1.0/bits/memory_resource.h \
+ C:/mingw64/include/c++/16.1.0/cstddef \
+ C:/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
+ C:/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
+ C:/mingw64/include/c++/16.1.0/tuple \
+ C:/mingw64/include/c++/16.1.0/bits/ranges_util.h \
  C:/mingw64/include/c++/16.1.0/stdexcept \
  C:/mingw64/include/c++/16.1.0/string \
- C:/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/16.1.0/bits/stringfwd.h \
- C:/mingw64/include/c++/16.1.0/bits/memoryfwd.h \
  C:/mingw64/include/c++/16.1.0/bits/char_traits.h \
  C:/mingw64/include/c++/16.1.0/bits/postypes.h \
  C:/mingw64/include/c++/16.1.0/cwchar \
@@ -84,11 +121,6 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/mingw64/include/c++/16.1.0/bits/allocator.h \
- C:/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/mingw64/include/c++/16.1.0/bits/new_allocator.h \
- C:/mingw64/include/c++/16.1.0/bits/new_throw.h \
- C:/mingw64/include/c++/16.1.0/bits/cpp_type_traits.h \
  C:/mingw64/include/c++/16.1.0/bits/localefwd.h \
  C:/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/mingw64/include/c++/16.1.0/clocale \
@@ -100,28 +132,8 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
  C:/mingw64/include/c++/16.1.0/bits/ostream_insert.h \
  C:/mingw64/include/c++/16.1.0/bits/cxxabi_forced.h \
- C:/mingw64/include/c++/16.1.0/bits/stl_iterator.h \
- C:/mingw64/include/c++/16.1.0/ext/type_traits.h \
- C:/mingw64/include/c++/16.1.0/bits/stl_function.h \
- C:/mingw64/include/c++/16.1.0/backward/binders.h \
- C:/mingw64/include/c++/16.1.0/ext/numeric_traits.h \
- C:/mingw64/include/c++/16.1.0/bits/stdexcept_throw.h \
- C:/mingw64/include/c++/16.1.0/bits/stdexcept_throwfwd.h \
- C:/mingw64/include/c++/16.1.0/bits/stl_algobase.h \
- C:/mingw64/include/c++/16.1.0/bits/stl_pair.h \
- C:/mingw64/include/c++/16.1.0/debug/debug.h \
- C:/mingw64/include/c++/16.1.0/bits/predefined_ops.h \
- C:/mingw64/include/c++/16.1.0/bit \
- C:/mingw64/include/c++/16.1.0/bits/range_access.h \
- C:/mingw64/include/c++/16.1.0/bits/erase_if.h \
  C:/mingw64/include/c++/16.1.0/bits/basic_string.h \
- C:/mingw64/include/c++/16.1.0/ext/alloc_traits.h \
- C:/mingw64/include/c++/16.1.0/bits/alloc_traits.h \
  C:/mingw64/include/c++/16.1.0/string_view \
- C:/mingw64/include/c++/16.1.0/bits/ranges_base.h \
- C:/mingw64/include/c++/16.1.0/bits/max_size_type.h \
- C:/mingw64/include/c++/16.1.0/numbers \
- C:/mingw64/include/c++/16.1.0/limits \
  C:/mingw64/include/c++/16.1.0/bits/string_view.tcc \
  C:/mingw64/include/c++/16.1.0/ext/string_conversions.h \
  C:/mingw64/include/c++/16.1.0/cstdlib \
@@ -139,10 +151,4 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj: \
  C:/mingw64/include/c++/16.1.0/cerrno \
  C:/mingw64/include/c++/16.1.0/bits/charconv.h \
  C:/mingw64/include/c++/16.1.0/bits/basic_string.tcc \
- C:/mingw64/include/c++/16.1.0/bits/memory_resource.h \
- C:/mingw64/include/c++/16.1.0/cstddef \
- C:/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
- C:/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
- C:/mingw64/include/c++/16.1.0/tuple \
- C:/mingw64/include/c++/16.1.0/bits/ranges_util.h \
  C:/mingw64/include/c++/16.1.0/bits/stdexcept_except.h

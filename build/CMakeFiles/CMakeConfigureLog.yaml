@@ -4,14 +4,14 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
@@ -27,8 +27,9 @@ events:
     names:
       - "mingw32-make.exe"
     candidate_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -40,7 +41,6 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "/REGISTRY-NOTFOUND/bin/"
@@ -48,36 +48,14 @@ events:
       - "/MinGW/bin/"
       - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/mingw32-make.exe.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/mingw32-make.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/mingw32-make.exe.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/mingw32-make.exe"
-      - "C:/Windows/System32/mingw32-make.exe.com"
-      - "C:/Windows/System32/mingw32-make.exe"
-      - "C:/Windows/mingw32-make.exe.com"
-      - "C:/Windows/mingw32-make.exe"
-      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
-      - "C:/Windows/System32/wbem/mingw32-make.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
-      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
-      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
-      - "C:/Program Files/CMake/bin/mingw32-make.exe.com"
-      - "C:/Program Files/CMake/bin/mingw32-make.exe"
-      - "C:/Program Files/Git/cmd/mingw32-make.exe.com"
-      - "C:/Program Files/Git/cmd/mingw32-make.exe"
-      - "C:/Program Files/nodejs/mingw32-make.exe.com"
-      - "C:/Program Files/nodejs/mingw32-make.exe"
-      - "C:/Program Files/Calibre2/mingw32-make.exe.com"
-      - "C:/Program Files/Calibre2/mingw32-make.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/mingw32-make.exe.com"
-      - "C:/Program Files/PostgreSQL/18/bin/mingw32-make.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe"
       - "C:/mingw64/bin/mingw32-make.exe.com"
     found: "C:/mingw64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -98,8 +76,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
@@ -121,8 +99,9 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -134,31 +113,9 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
     searched_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cc.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cc.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cc"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cl.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cl.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/cl"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/bcc.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/bcc.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/bcc"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/xlc.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/xlc.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/xlc"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/icx.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/icx.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/icx"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/clang.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/clang.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/clang"
       - "C:/VulkanSDK/1.4.321.1/Bin/cc.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/cc.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/cc"
@@ -180,237 +137,6 @@ events:
       - "C:/VulkanSDK/1.4.321.1/Bin/clang.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/clang.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/clang"
-      - "C:/Windows/System32/cc.com"
-      - "C:/Windows/System32/cc.exe"
-      - "C:/Windows/System32/cc"
-      - "C:/Windows/System32/gcc.com"
-      - "C:/Windows/System32/gcc.exe"
-      - "C:/Windows/System32/gcc"
-      - "C:/Windows/System32/cl.com"
-      - "C:/Windows/System32/cl.exe"
-      - "C:/Windows/System32/cl"
-      - "C:/Windows/System32/bcc.com"
-      - "C:/Windows/System32/bcc.exe"
-      - "C:/Windows/System32/bcc"
-      - "C:/Windows/System32/xlc.com"
-      - "C:/Windows/System32/xlc.exe"
-      - "C:/Windows/System32/xlc"
-      - "C:/Windows/System32/icx.com"
-      - "C:/Windows/System32/icx.exe"
-      - "C:/Windows/System32/icx"
-      - "C:/Windows/System32/clang.com"
-      - "C:/Windows/System32/clang.exe"
-      - "C:/Windows/System32/clang"
-      - "C:/Windows/cc.com"
-      - "C:/Windows/cc.exe"
-      - "C:/Windows/cc"
-      - "C:/Windows/gcc.com"
-      - "C:/Windows/gcc.exe"
-      - "C:/Windows/gcc"
-      - "C:/Windows/cl.com"
-      - "C:/Windows/cl.exe"
-      - "C:/Windows/cl"
-      - "C:/Windows/bcc.com"
-      - "C:/Windows/bcc.exe"
-      - "C:/Windows/bcc"
-      - "C:/Windows/xlc.com"
-      - "C:/Windows/xlc.exe"
-      - "C:/Windows/xlc"
-      - "C:/Windows/icx.com"
-      - "C:/Windows/icx.exe"
-      - "C:/Windows/icx"
-      - "C:/Windows/clang.com"
-      - "C:/Windows/clang.exe"
-      - "C:/Windows/clang"
-      - "C:/Windows/System32/wbem/cc.com"
-      - "C:/Windows/System32/wbem/cc.exe"
-      - "C:/Windows/System32/wbem/cc"
-      - "C:/Windows/System32/wbem/gcc.com"
-      - "C:/Windows/System32/wbem/gcc.exe"
-      - "C:/Windows/System32/wbem/gcc"
-      - "C:/Windows/System32/wbem/cl.com"
-      - "C:/Windows/System32/wbem/cl.exe"
-      - "C:/Windows/System32/wbem/cl"
-      - "C:/Windows/System32/wbem/bcc.com"
-      - "C:/Windows/System32/wbem/bcc.exe"
-      - "C:/Windows/System32/wbem/bcc"
-      - "C:/Windows/System32/wbem/xlc.com"
-      - "C:/Windows/System32/wbem/xlc.exe"
-      - "C:/Windows/System32/wbem/xlc"
-      - "C:/Windows/System32/wbem/icx.com"
-      - "C:/Windows/System32/wbem/icx.exe"
-      - "C:/Windows/System32/wbem/icx"
-      - "C:/Windows/System32/wbem/clang.com"
-      - "C:/Windows/System32/wbem/clang.exe"
-      - "C:/Windows/System32/wbem/clang"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/cl"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/bcc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/xlc"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/icx"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/clang"
-      - "C:/Windows/System32/OpenSSH/cc.com"
-      - "C:/Windows/System32/OpenSSH/cc.exe"
-      - "C:/Windows/System32/OpenSSH/cc"
-      - "C:/Windows/System32/OpenSSH/gcc.com"
-      - "C:/Windows/System32/OpenSSH/gcc.exe"
-      - "C:/Windows/System32/OpenSSH/gcc"
-      - "C:/Windows/System32/OpenSSH/cl.com"
-      - "C:/Windows/System32/OpenSSH/cl.exe"
-      - "C:/Windows/System32/OpenSSH/cl"
-      - "C:/Windows/System32/OpenSSH/bcc.com"
-      - "C:/Windows/System32/OpenSSH/bcc.exe"
-      - "C:/Windows/System32/OpenSSH/bcc"
-      - "C:/Windows/System32/OpenSSH/xlc.com"
-      - "C:/Windows/System32/OpenSSH/xlc.exe"
-      - "C:/Windows/System32/OpenSSH/xlc"
-      - "C:/Windows/System32/OpenSSH/icx.com"
-      - "C:/Windows/System32/OpenSSH/icx.exe"
-      - "C:/Windows/System32/OpenSSH/icx"
-      - "C:/Windows/System32/OpenSSH/clang.com"
-      - "C:/Windows/System32/OpenSSH/clang.exe"
-      - "C:/Windows/System32/OpenSSH/clang"
-      - "C:/Program Files/CMake/bin/cc.com"
-      - "C:/Program Files/CMake/bin/cc.exe"
-      - "C:/Program Files/CMake/bin/cc"
-      - "C:/Program Files/CMake/bin/gcc.com"
-      - "C:/Program Files/CMake/bin/gcc.exe"
-      - "C:/Program Files/CMake/bin/gcc"
-      - "C:/Program Files/CMake/bin/cl.com"
-      - "C:/Program Files/CMake/bin/cl.exe"
-      - "C:/Program Files/CMake/bin/cl"
-      - "C:/Program Files/CMake/bin/bcc.com"
-      - "C:/Program Files/CMake/bin/bcc.exe"
-      - "C:/Program Files/CMake/bin/bcc"
-      - "C:/Program Files/CMake/bin/xlc.com"
-      - "C:/Program Files/CMake/bin/xlc.exe"
-      - "C:/Program Files/CMake/bin/xlc"
-      - "C:/Program Files/CMake/bin/icx.com"
-      - "C:/Program Files/CMake/bin/icx.exe"
-      - "C:/Program Files/CMake/bin/icx"
-      - "C:/Program Files/CMake/bin/clang.com"
-      - "C:/Program Files/CMake/bin/clang.exe"
-      - "C:/Program Files/CMake/bin/clang"
-      - "C:/Program Files/Git/cmd/cc.com"
-      - "C:/Program Files/Git/cmd/cc.exe"
-      - "C:/Program Files/Git/cmd/cc"
-      - "C:/Program Files/Git/cmd/gcc.com"
-      - "C:/Program Files/Git/cmd/gcc.exe"
-      - "C:/Program Files/Git/cmd/gcc"
-      - "C:/Program Files/Git/cmd/cl.com"
-      - "C:/Program Files/Git/cmd/cl.exe"
-      - "C:/Program Files/Git/cmd/cl"
-      - "C:/Program Files/Git/cmd/bcc.com"
-      - "C:/Program Files/Git/cmd/bcc.exe"
-      - "C:/Program Files/Git/cmd/bcc"
-      - "C:/Program Files/Git/cmd/xlc.com"
-      - "C:/Program Files/Git/cmd/xlc.exe"
-      - "C:/Program Files/Git/cmd/xlc"
-      - "C:/Program Files/Git/cmd/icx.com"
-      - "C:/Program Files/Git/cmd/icx.exe"
-      - "C:/Program Files/Git/cmd/icx"
-      - "C:/Program Files/Git/cmd/clang.com"
-      - "C:/Program Files/Git/cmd/clang.exe"
-      - "C:/Program Files/Git/cmd/clang"
-      - "C:/Program Files/nodejs/cc.com"
-      - "C:/Program Files/nodejs/cc.exe"
-      - "C:/Program Files/nodejs/cc"
-      - "C:/Program Files/nodejs/gcc.com"
-      - "C:/Program Files/nodejs/gcc.exe"
-      - "C:/Program Files/nodejs/gcc"
-      - "C:/Program Files/nodejs/cl.com"
-      - "C:/Program Files/nodejs/cl.exe"
-      - "C:/Program Files/nodejs/cl"
-      - "C:/Program Files/nodejs/bcc.com"
-      - "C:/Program Files/nodejs/bcc.exe"
-      - "C:/Program Files/nodejs/bcc"
-      - "C:/Program Files/nodejs/xlc.com"
-      - "C:/Program Files/nodejs/xlc.exe"
-      - "C:/Program Files/nodejs/xlc"
-      - "C:/Program Files/nodejs/icx.com"
-      - "C:/Program Files/nodejs/icx.exe"
-      - "C:/Program Files/nodejs/icx"
-      - "C:/Program Files/nodejs/clang.com"
-      - "C:/Program Files/nodejs/clang.exe"
-      - "C:/Program Files/nodejs/clang"
-      - "C:/Program Files/Calibre2/cc.com"
-      - "C:/Program Files/Calibre2/cc.exe"
-      - "C:/Program Files/Calibre2/cc"
-      - "C:/Program Files/Calibre2/gcc.com"
-      - "C:/Program Files/Calibre2/gcc.exe"
-      - "C:/Program Files/Calibre2/gcc"
-      - "C:/Program Files/Calibre2/cl.com"
-      - "C:/Program Files/Calibre2/cl.exe"
-      - "C:/Program Files/Calibre2/cl"
-      - "C:/Program Files/Calibre2/bcc.com"
-      - "C:/Program Files/Calibre2/bcc.exe"
-      - "C:/Program Files/Calibre2/bcc"
-      - "C:/Program Files/Calibre2/xlc.com"
-      - "C:/Program Files/Calibre2/xlc.exe"
-      - "C:/Program Files/Calibre2/xlc"
-      - "C:/Program Files/Calibre2/icx.com"
-      - "C:/Program Files/Calibre2/icx.exe"
-      - "C:/Program Files/Calibre2/icx"
-      - "C:/Program Files/Calibre2/clang.com"
-      - "C:/Program Files/Calibre2/clang.exe"
-      - "C:/Program Files/Calibre2/clang"
-      - "C:/Program Files/PostgreSQL/18/bin/cc.com"
-      - "C:/Program Files/PostgreSQL/18/bin/cc.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/cc"
-      - "C:/Program Files/PostgreSQL/18/bin/gcc.com"
-      - "C:/Program Files/PostgreSQL/18/bin/gcc.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/gcc"
-      - "C:/Program Files/PostgreSQL/18/bin/cl.com"
-      - "C:/Program Files/PostgreSQL/18/bin/cl.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/cl"
-      - "C:/Program Files/PostgreSQL/18/bin/bcc.com"
-      - "C:/Program Files/PostgreSQL/18/bin/bcc.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/bcc"
-      - "C:/Program Files/PostgreSQL/18/bin/xlc.com"
-      - "C:/Program Files/PostgreSQL/18/bin/xlc.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/xlc"
-      - "C:/Program Files/PostgreSQL/18/bin/icx.com"
-      - "C:/Program Files/PostgreSQL/18/bin/icx.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/icx"
-      - "C:/Program Files/PostgreSQL/18/bin/clang.com"
-      - "C:/Program Files/PostgreSQL/18/bin/clang.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/clang"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cc.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cc.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cc"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/gcc.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/gcc.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/gcc"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cl.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cl.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/cl"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/bcc.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/bcc.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/bcc"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/xlc.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/xlc.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/xlc"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/icx.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/icx.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/icx"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/clang.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/clang.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/clang"
       - "C:/mingw64/bin/cc.com"
       - "C:/mingw64/bin/cc.exe"
       - "C:/mingw64/bin/cc"
@@ -418,6 +144,8 @@ events:
     found: "C:/mingw64/bin/gcc.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -438,11 +166,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:3 (project)"
     mode: "file"
     variable: "src_in"
@@ -458,10 +186,12 @@ events:
     names:
       - "CMakeCCompilerId.c.in"
     candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+      - "C:/mingw64/share/cmake-4.3/Modules/"
+    found: "C:/mingw64/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -482,9 +212,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -499,13 +229,13 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is GNU, found in:
-        C:/Users/andre/experimetos_vulkan/build/CMakeFiles/4.1.1/CompilerIdC/a.exe
+        C:/Users/andre/experimetos_vulkan/build/CMakeFiles/4.3.3/CompilerIdC/a.exe
       
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_AR"
@@ -522,8 +252,8 @@ events:
       - "ar"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -542,6 +272,8 @@ events:
     found: "C:/mingw64/bin/ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -562,8 +294,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
@@ -580,8 +312,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -600,6 +332,8 @@ events:
     found: "C:/mingw64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -620,8 +354,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
@@ -638,8 +372,8 @@ events:
       - "strip"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -658,6 +392,8 @@ events:
     found: "C:/mingw64/bin/strip.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -678,8 +414,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
@@ -696,8 +432,8 @@ events:
       - "ld"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -716,6 +452,8 @@ events:
     found: "C:/mingw64/bin/ld.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -736,8 +474,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_NM"
@@ -754,8 +492,8 @@ events:
       - "nm"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -774,6 +512,8 @@ events:
     found: "C:/mingw64/bin/nm.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -794,8 +534,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
@@ -812,8 +552,8 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -832,6 +572,8 @@ events:
     found: "C:/mingw64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -852,8 +594,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
@@ -870,8 +612,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -890,6 +632,8 @@ events:
     found: "C:/mingw64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -910,8 +654,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
@@ -928,8 +672,8 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -948,6 +692,8 @@ events:
     found: "C:/mingw64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -968,8 +714,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
@@ -986,8 +732,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1006,6 +752,8 @@ events:
     found: "C:/mingw64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1026,8 +774,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
@@ -1044,8 +792,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1064,6 +812,8 @@ events:
     found: "C:/mingw64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1084,8 +834,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
@@ -1102,8 +852,8 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1121,12 +871,12 @@ events:
       - "C:/mingw64/bin/tapi.com"
       - "C:/mingw64/bin/tapi.exe"
       - "C:/mingw64/bin/tapi"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi"
       - "C:/VulkanSDK/1.4.321.1/Bin/tapi.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/tapi.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/tapi"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/tapi"
       - "C:/Windows/System32/tapi.com"
       - "C:/Windows/System32/tapi.exe"
       - "C:/Windows/System32/tapi"
@@ -1169,6 +919,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1189,8 +941,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
@@ -1210,8 +962,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1229,12 +981,12 @@ events:
       - "C:/mingw64/bin/gcc-ar-16.1.com"
       - "C:/mingw64/bin/gcc-ar-16.1.exe"
       - "C:/mingw64/bin/gcc-ar-16.1"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1"
       - "C:/Windows/System32/gcc-ar-16.1.com"
       - "C:/Windows/System32/gcc-ar-16.1.exe"
       - "C:/Windows/System32/gcc-ar-16.1"
@@ -1277,12 +1029,12 @@ events:
       - "C:/mingw64/bin/gcc-ar-16.com"
       - "C:/mingw64/bin/gcc-ar-16.exe"
       - "C:/mingw64/bin/gcc-ar-16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16"
       - "C:/Windows/System32/gcc-ar-16.com"
       - "C:/Windows/System32/gcc-ar-16.exe"
       - "C:/Windows/System32/gcc-ar-16"
@@ -1325,12 +1077,12 @@ events:
       - "C:/mingw64/bin/gcc-ar16.com"
       - "C:/mingw64/bin/gcc-ar16.exe"
       - "C:/mingw64/bin/gcc-ar16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16"
       - "C:/Windows/System32/gcc-ar16.com"
       - "C:/Windows/System32/gcc-ar16.exe"
       - "C:/Windows/System32/gcc-ar16"
@@ -1374,6 +1126,8 @@ events:
     found: "C:/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1394,8 +1148,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
@@ -1415,8 +1169,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1434,12 +1188,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib-16.1.com"
       - "C:/mingw64/bin/gcc-ranlib-16.1.exe"
       - "C:/mingw64/bin/gcc-ranlib-16.1"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1"
       - "C:/Windows/System32/gcc-ranlib-16.1.com"
       - "C:/Windows/System32/gcc-ranlib-16.1.exe"
       - "C:/Windows/System32/gcc-ranlib-16.1"
@@ -1482,12 +1236,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib-16.com"
       - "C:/mingw64/bin/gcc-ranlib-16.exe"
       - "C:/mingw64/bin/gcc-ranlib-16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16"
       - "C:/Windows/System32/gcc-ranlib-16.com"
       - "C:/Windows/System32/gcc-ranlib-16.exe"
       - "C:/Windows/System32/gcc-ranlib-16"
@@ -1530,12 +1284,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib16.com"
       - "C:/mingw64/bin/gcc-ranlib16.exe"
       - "C:/mingw64/bin/gcc-ranlib16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16"
       - "C:/Windows/System32/gcc-ranlib16.com"
       - "C:/Windows/System32/gcc-ranlib16.exe"
       - "C:/Windows/System32/gcc-ranlib16"
@@ -1579,6 +1333,8 @@ events:
     found: "C:/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1599,8 +1355,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER"
@@ -1627,6 +1383,8 @@ events:
     found: "C:/mingw64/bin/c++.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1647,11 +1405,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:3 (project)"
     mode: "file"
     variable: "src_in"
@@ -1667,10 +1425,12 @@ events:
     names:
       - "CMakeCXXCompilerId.cpp.in"
     candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+      - "C:/mingw64/share/cmake-4.3/Modules/"
+    found: "C:/mingw64/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1691,9 +1451,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -1708,13 +1468,13 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/andre/experimetos_vulkan/build/CMakeFiles/4.1.1/CompilerIdCXX/a.exe
+        C:/Users/andre/experimetos_vulkan/build/CMakeFiles/4.3.3/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
@@ -1734,8 +1494,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1753,12 +1513,12 @@ events:
       - "C:/mingw64/bin/gcc-ar-16.1.com"
       - "C:/mingw64/bin/gcc-ar-16.1.exe"
       - "C:/mingw64/bin/gcc-ar-16.1"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.1"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.1"
       - "C:/Windows/System32/gcc-ar-16.1.com"
       - "C:/Windows/System32/gcc-ar-16.1.exe"
       - "C:/Windows/System32/gcc-ar-16.1"
@@ -1801,12 +1561,12 @@ events:
       - "C:/mingw64/bin/gcc-ar-16.com"
       - "C:/mingw64/bin/gcc-ar-16.exe"
       - "C:/mingw64/bin/gcc-ar-16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar-16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar-16"
       - "C:/Windows/System32/gcc-ar-16.com"
       - "C:/Windows/System32/gcc-ar-16.exe"
       - "C:/Windows/System32/gcc-ar-16"
@@ -1849,12 +1609,12 @@ events:
       - "C:/mingw64/bin/gcc-ar16.com"
       - "C:/mingw64/bin/gcc-ar16.exe"
       - "C:/mingw64/bin/gcc-ar16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ar16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ar16"
       - "C:/Windows/System32/gcc-ar16.com"
       - "C:/Windows/System32/gcc-ar16.exe"
       - "C:/Windows/System32/gcc-ar16"
@@ -1898,6 +1658,8 @@ events:
     found: "C:/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -1918,8 +1680,8 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
@@ -1939,8 +1701,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/mingw64/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1958,12 +1720,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib-16.1.com"
       - "C:/mingw64/bin/gcc-ranlib-16.1.exe"
       - "C:/mingw64/bin/gcc-ranlib-16.1"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.1"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.1"
       - "C:/Windows/System32/gcc-ranlib-16.1.com"
       - "C:/Windows/System32/gcc-ranlib-16.1.exe"
       - "C:/Windows/System32/gcc-ranlib-16.1"
@@ -2006,12 +1768,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib-16.com"
       - "C:/mingw64/bin/gcc-ranlib-16.exe"
       - "C:/mingw64/bin/gcc-ranlib-16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib-16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib-16"
       - "C:/Windows/System32/gcc-ranlib-16.com"
       - "C:/Windows/System32/gcc-ranlib-16.exe"
       - "C:/Windows/System32/gcc-ranlib-16"
@@ -2054,12 +1816,12 @@ events:
       - "C:/mingw64/bin/gcc-ranlib16.com"
       - "C:/mingw64/bin/gcc-ranlib16.exe"
       - "C:/mingw64/bin/gcc-ranlib16"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/gcc-ranlib16"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/gcc-ranlib16"
       - "C:/Windows/System32/gcc-ranlib16.com"
       - "C:/Windows/System32/gcc-ranlib16.exe"
       - "C:/Windows/System32/gcc-ranlib16"
@@ -2103,6 +1865,8 @@ events:
     found: "C:/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -2123,10 +1887,10 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
@@ -2143,8 +1907,9 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2156,7 +1921,6 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
@@ -2165,56 +1929,22 @@ events:
       - "C:/Program Files (x86)/bin/"
       - "C:/Program Files (x86)/sbin/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/bin/"
+      - "C:/mingw64/sbin/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/bin/"
       - "C:/Program Files (x86)/VulkanEngine/sbin/"
       - "C:/Program Files (x86)/VulkanEngine/"
     searched_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/windres.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/windres.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/windres"
       - "C:/VulkanSDK/1.4.321.1/Bin/windres.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/windres.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/windres"
-      - "C:/Windows/System32/windres.com"
-      - "C:/Windows/System32/windres.exe"
-      - "C:/Windows/System32/windres"
-      - "C:/Windows/windres.com"
-      - "C:/Windows/windres.exe"
-      - "C:/Windows/windres"
-      - "C:/Windows/System32/wbem/windres.com"
-      - "C:/Windows/System32/wbem/windres.exe"
-      - "C:/Windows/System32/wbem/windres"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
-      - "C:/Windows/System32/OpenSSH/windres.com"
-      - "C:/Windows/System32/OpenSSH/windres.exe"
-      - "C:/Windows/System32/OpenSSH/windres"
-      - "C:/Program Files/CMake/bin/windres.com"
-      - "C:/Program Files/CMake/bin/windres.exe"
-      - "C:/Program Files/CMake/bin/windres"
-      - "C:/Program Files/Git/cmd/windres.com"
-      - "C:/Program Files/Git/cmd/windres.exe"
-      - "C:/Program Files/Git/cmd/windres"
-      - "C:/Program Files/nodejs/windres.com"
-      - "C:/Program Files/nodejs/windres.exe"
-      - "C:/Program Files/nodejs/windres"
-      - "C:/Program Files/Calibre2/windres.com"
-      - "C:/Program Files/Calibre2/windres.exe"
-      - "C:/Program Files/Calibre2/windres"
-      - "C:/Program Files/PostgreSQL/18/bin/windres.com"
-      - "C:/Program Files/PostgreSQL/18/bin/windres.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/windres"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/windres.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/windres.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/windres"
       - "C:/mingw64/bin/windres.com"
     found: "C:/mingw64/bin/windres.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -2236,20 +1966,21 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n"
-      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n"
+      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri"
+      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri"
     cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -2257,13 +1988,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n'
+        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ff1f3/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ff1f3.dir\\build.make CMakeFiles/cmTC_ff1f3.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n'
-        Building C object CMakeFiles/cmTC_ff1f3.dir/CMakeCCompilerABI.c.obj
-        C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_61f5e/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_61f5e.dir\\build.make CMakeFiles/cmTC_61f5e.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri'
+        Building C object CMakeFiles/cmTC_61f5e.dir/CMakeCCompilerABI.c.obj
+        C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj -c C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -2272,8 +2003,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_ff1f3.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccniPh1J.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_61f5e.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\cc1lrUAo.s
         GNU C23 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -2292,14 +2023,14 @@ events:
          C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: a7271a302c0c2d48f3f155607fd47de9
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccniPh1J.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\andre\\AppData\\Local\\Temp\\cc1lrUAo.s
         GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r3) 2.46.1
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_ff1f3.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ff1f3.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_61f5e.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_61f5e.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -2311,23 +2042,23 @@ events:
         gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff1f3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ff1f3.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc9Y543f.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ff1f3.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ff1f3.dir/objects.a --no-whole-archive --out-implib libcmTC_ff1f3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_61f5e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_61f5e.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\ccp8SfYR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_61f5e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_61f5e.dir/objects.a --no-whole-archive --out-implib libcmTC_61f5e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc9Y543f.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ff1f3.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ff1f3.dir/objects.a --no-whole-archive --out-implib libcmTC_ff1f3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\ccp8SfYR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_61f5e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_61f5e.dir/objects.a --no-whole-archive --out-implib libcmTC_61f5e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r3) 2.46.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff1f3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ff1f3.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ff1f3.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_ff1f3.dir/objects.a @CMakeFiles\\cmTC_ff1f3.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_ff1f3.dir/objects.a -Wl,--no-whole-archive -o cmTC_ff1f3.exe -Wl,--out-implib,libcmTC_ff1f3.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_61f5e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_61f5e.'
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_61f5e.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_61f5e.dir/objects.a @CMakeFiles\\cmTC_61f5e.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_61f5e.dir/objects.a -Wl,--no-whole-archive -o cmTC_61f5e.exe -Wl,--out-implib,libcmTC_61f5e.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
@@ -2348,20 +2079,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n']
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ff1f3/fast]
-        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ff1f3.dir\\build.make CMakeFiles/cmTC_ff1f3.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-dqck5n']
-        ignore line: [Building C object CMakeFiles/cmTC_ff1f3.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_61f5e/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_61f5e.dir\\build.make CMakeFiles/cmTC_61f5e.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-lj1bri']
+        ignore line: [Building C object CMakeFiles/cmTC_61f5e.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj -c C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -2370,8 +2101,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r3) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_ff1f3.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccniPh1J.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_61f5e.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\cc1lrUAo.s]
         ignore line: [GNU C23 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r3) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2390,8 +2121,8 @@ events:
         ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a7271a302c0c2d48f3f155607fd47de9]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccniPh1J.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj C:\\Users\\andre\\AppData\\Local\\Temp\\cc1lrUAo.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders  r3) 2.46.1]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -2402,9 +2133,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_ff1f3.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_ff1f3.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ff1f3.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_61f5e.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_61f5e.exe]
+        ignore line: [C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_61f5e.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -2423,13 +2154,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ff1f3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ff1f3.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc9Y543f.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ff1f3.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ff1f3.dir/objects.a --no-whole-archive --out-implib libcmTC_ff1f3.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_61f5e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_61f5e.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\ccp8SfYR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_61f5e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_61f5e.dir/objects.a --no-whole-archive --out-implib libcmTC_61f5e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc9Y543f.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\ccp8SfYR.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2451,7 +2182,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_ff1f3.exe] ==> ignore
+          arg [cmTC_61f5e.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -2462,10 +2193,10 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_ff1f3.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_61f5e.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_ff1f3.dll.a] ==> ignore
+          arg [libcmTC_61f5e.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2513,9 +2244,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "-v"
@@ -2523,9 +2254,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "-V"
@@ -2533,9 +2264,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the C compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "--version"
@@ -2543,30 +2274,31 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx"
-      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx"
+      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f"
+      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx'
+        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cdd58/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cdd58.dir\\build.make CMakeFiles/cmTC_cdd58.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx'
-        Building CXX object CMakeFiles/cmTC_cdd58.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5566d/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5566d.dir\\build.make CMakeFiles/cmTC_5566d.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f'
+        Building CXX object CMakeFiles/cmTC_5566d.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -2575,8 +2307,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cdd58.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccPHPTQq.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5566d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccGwM2hi.s
         GNU C++20 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -2601,14 +2333,14 @@ events:
          C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: ffc962328150450d4215264ddd044f75
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccPHPTQq.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccGwM2hi.s
         GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r3) 2.46.1
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_cdd58.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cdd58.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5566d.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_5566d.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -2620,23 +2352,23 @@ events:
         gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdd58.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cdd58.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cce8pnqr.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cdd58.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cdd58.dir/objects.a --no-whole-archive --out-implib libcmTC_cdd58.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5566d.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5566d.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc2Fi3rt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5566d.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5566d.dir/objects.a --no-whole-archive --out-implib libcmTC_5566d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cce8pnqr.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cdd58.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cdd58.dir/objects.a --no-whole-archive --out-implib libcmTC_cdd58.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc2Fi3rt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5566d.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5566d.dir/objects.a --no-whole-archive --out-implib libcmTC_5566d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r3) 2.46.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdd58.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cdd58.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_cdd58.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_cdd58.dir/objects.a @CMakeFiles\\cmTC_cdd58.dir\\objects1.rsp
-        C:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_cdd58.dir/objects.a -Wl,--no-whole-archive -o cmTC_cdd58.exe -Wl,--out-implib,libcmTC_cdd58.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5566d.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5566d.'
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_5566d.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5566d.dir/objects.a @CMakeFiles\\cmTC_5566d.dir\\objects1.rsp
+        C:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5566d.dir/objects.a -Wl,--no-whole-archive -o cmTC_5566d.exe -Wl,--out-implib,libcmTC_5566d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
@@ -2663,20 +2395,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx']
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cdd58/fast]
-        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cdd58.dir\\build.make CMakeFiles/cmTC_cdd58.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-gbzenx']
-        ignore line: [Building CXX object CMakeFiles/cmTC_cdd58.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5566d/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5566d.dir\\build.make CMakeFiles/cmTC_5566d.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-p4hq4f']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5566d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -2685,8 +2417,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r3) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cdd58.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccPHPTQq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5566d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\andre\\AppData\\Local\\Temp\\ccGwM2hi.s]
         ignore line: [GNU C++20 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r3) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2711,8 +2443,8 @@ events:
         ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: ffc962328150450d4215264ddd044f75]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccPHPTQq.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\andre\\AppData\\Local\\Temp\\ccGwM2hi.s]
         ignore line: [GNU assembler version 2.46.1 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders  r3) 2.46.1]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -2723,9 +2455,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_cdd58.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_cdd58.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cdd58.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5566d.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5566d.exe]
+        ignore line: [C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_5566d.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -2744,13 +2476,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdd58.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cdd58.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cce8pnqr.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_cdd58.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cdd58.dir/objects.a --no-whole-archive --out-implib libcmTC_cdd58.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5566d.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5566d.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc2Fi3rt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5566d.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5566d.dir/objects.a --no-whole-archive --out-implib libcmTC_5566d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cce8pnqr.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\andre\\AppData\\Local\\Temp\\cc2Fi3rt.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2772,7 +2504,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_cdd58.exe] ==> ignore
+          arg [cmTC_5566d.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -2783,10 +2515,10 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_cdd58.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_5566d.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_cdd58.dll.a] ==> ignore
+          arg [libcmTC_5566d.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2833,9 +2565,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the CXX compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "-v"
@@ -2843,9 +2575,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the CXX compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "-V"
@@ -2853,9 +2585,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Running the CXX compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-16.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --enable-libgdiagnostics --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-16.1.0/build_mingw/mingw-w64 CFLAGS='-I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "--version"
@@ -2863,7 +2595,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:387 (find_path)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindVulkan.cmake:409 (find_path)"
       - "CMakeLists.txt:8 (find_package)"
     mode: "path"
     variable: "Vulkan_INCLUDE_DIR"
@@ -2880,8 +2612,9 @@ events:
       - "vulkan/vulkan.h"
     candidate_directories:
       - "C:/VulkanSDK/1.4.321.1/include/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2893,20 +2626,21 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/include/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/include/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/include/"
       - "C:/Program Files (x86)/VulkanEngine/"
     found: "C:/VulkanSDK/1.4.321.1/include/"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -2928,12 +2662,12 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:394 (find_library)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindVulkan.cmake:416 (find_library)"
       - "CMakeLists.txt:8 (find_package)"
     mode: "library"
     variable: "Vulkan_LIBRARY"
@@ -2950,9 +2684,9 @@ events:
       - "vulkan-1"
     candidate_directories:
       - "C:/VulkanSDK/1.4.321.1/lib/"
-      - "C:/VulkanSDK/1.4.321.1/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2964,15 +2698,14 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/lib/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/lib/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/lib/"
       - "C:/Program Files (x86)/VulkanEngine/"
       - "C:/Program Files (x86)/VulkanEngine/bin/"
@@ -2980,6 +2713,8 @@ events:
     found: "C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -3001,16 +2736,16 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "C:/Program Files (x86)/VulkanEngine/bin"
-        - "C:/Program Files/CMake/bin"
+        - "C:/mingw64/bin"
         - "/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:402 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindVulkan.cmake:424 (find_program)"
       - "CMakeLists.txt:8 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLC_EXECUTABLE"
@@ -3027,8 +2762,9 @@ events:
       - "glslc"
     candidate_directories:
       - "C:/VulkanSDK/1.4.321.1/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -3040,7 +2776,6 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
@@ -3049,9 +2784,9 @@ events:
       - "C:/Program Files (x86)/bin/"
       - "C:/Program Files (x86)/sbin/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/bin/"
+      - "C:/mingw64/sbin/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/bin/"
       - "C:/Program Files (x86)/VulkanEngine/sbin/"
       - "C:/Program Files (x86)/VulkanEngine/"
@@ -3060,6 +2795,8 @@ events:
     found: "C:/VulkanSDK/1.4.321.1/Bin/glslc.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -3081,12 +2818,12 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:410 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindVulkan.cmake:432 (find_program)"
       - "CMakeLists.txt:8 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
@@ -3103,8 +2840,9 @@ events:
       - "glslangValidator"
     candidate_directories:
       - "C:/VulkanSDK/1.4.321.1/bin/"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -3116,7 +2854,6 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
@@ -3125,9 +2862,9 @@ events:
       - "C:/Program Files (x86)/bin/"
       - "C:/Program Files (x86)/sbin/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/bin/"
+      - "C:/mingw64/sbin/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/bin/"
       - "C:/Program Files (x86)/VulkanEngine/sbin/"
       - "C:/Program Files (x86)/VulkanEngine/"
@@ -3136,6 +2873,8 @@ events:
     found: "C:/VulkanSDK/1.4.321.1/Bin/glslangValidator.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -3157,22 +2896,23 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/mingw64/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindThreads.cmake:226 (_threads_check_libc)"
       - "external/glfw-3.4/CMakeLists.txt:60 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-52vm6b"
-      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-52vm6b"
+      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-y3xkmy"
+      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-y3xkmy"
     cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -3181,32 +2921,33 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-52vm6b'
+        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-y3xkmy'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cb124/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cb124.dir\\build.make CMakeFiles/cmTC_cb124.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-52vm6b'
-        Building C object CMakeFiles/cmTC_cb124.dir/src.c.obj
-        C:\\mingw64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_cb124.dir\\src.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-52vm6b\\src.c
-        Linking C executable cmTC_cb124.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_cb124.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_cb124.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_cb124.dir/objects.a @CMakeFiles\\cmTC_cb124.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_cb124.dir/objects.a -Wl,--no-whole-archive -o cmTC_cb124.exe -Wl,--out-implib,libcmTC_cb124.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_cb124.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-52vm6b'
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1d90a/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1d90a.dir\\build.make CMakeFiles/cmTC_1d90a.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-y3xkmy'
+        Building C object CMakeFiles/cmTC_1d90a.dir/src.c.obj
+        C:\\mingw64\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\\cmTC_1d90a.dir\\src.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3xkmy\\src.c
+        Linking C executable cmTC_1d90a.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_1d90a.dir\\link.txt --verbose=1
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_1d90a.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_1d90a.dir/objects.a @CMakeFiles\\cmTC_1d90a.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_1d90a.dir/objects.a -Wl,--no-whole-archive -o cmTC_1d90a.exe -Wl,--out-implib,libcmTC_1d90a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1d90a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-y3xkmy'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:165 (try_compile)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
       - "external/glfw-3.4/src/CMakeLists.txt:274 (check_include_file)"
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-6t6ds2"
-      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-6t6ds2"
+      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-tb5ckx"
+      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-tb5ckx"
     cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -3215,32 +2956,33 @@ events:
       variable: "DINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-6t6ds2'
+        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-tb5ckx'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_52a09/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_52a09.dir\\build.make CMakeFiles/cmTC_52a09.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-6t6ds2'
-        Building C object CMakeFiles/cmTC_52a09.dir/CheckIncludeFile.c.obj
-        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_52a09.dir\\CheckIncludeFile.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6t6ds2\\CheckIncludeFile.c
-        Linking C executable cmTC_52a09.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_52a09.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_52a09.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_52a09.dir/objects.a @CMakeFiles\\cmTC_52a09.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_52a09.dir/objects.a -Wl,--no-whole-archive -o cmTC_52a09.exe -Wl,--out-implib,libcmTC_52a09.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_52a09.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-6t6ds2'
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b18be/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b18be.dir\\build.make CMakeFiles/cmTC_b18be.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-tb5ckx'
+        Building C object CMakeFiles/cmTC_b18be.dir/CheckIncludeFile.c.obj
+        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_b18be.dir\\CheckIncludeFile.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tb5ckx\\CheckIncludeFile.c
+        Linking C executable cmTC_b18be.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b18be.dir\\link.txt --verbose=1
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_b18be.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_b18be.dir/objects.a @CMakeFiles\\cmTC_b18be.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_b18be.dir/objects.a -Wl,--no-whole-archive -o cmTC_b18be.exe -Wl,--out-implib,libcmTC_b18be.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b18be.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-tb5ckx'
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFile.cmake:165 (try_compile)"
+      - "C:/mingw64/share/cmake-4.3/Modules/CheckIncludeFile.cmake:174 (try_compile)"
       - "external/glfw-3.4/src/CMakeLists.txt:275 (check_include_file)"
     checks:
       - "Looking for xinput.h"
     directories:
-      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-kkdpun"
-      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-kkdpun"
+      source: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-vuy32t"
+      binary: "C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-vuy32t"
     cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -3249,26 +2991,26 @@ events:
       variable: "XINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-kkdpun'
+        Change Dir: 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-vuy32t'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2399b/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2399b.dir\\build.make CMakeFiles/cmTC_2399b.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-kkdpun'
-        Building C object CMakeFiles/cmTC_2399b.dir/CheckIncludeFile.c.obj
-        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_2399b.dir\\CheckIncludeFile.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kkdpun\\CheckIncludeFile.c
-        Linking C executable cmTC_2399b.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2399b.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2399b.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_2399b.dir/objects.a @CMakeFiles\\cmTC_2399b.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_2399b.dir/objects.a -Wl,--no-whole-archive -o cmTC_2399b.exe -Wl,--out-implib,libcmTC_2399b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_2399b.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-kkdpun'
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_f7d59/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f7d59.dir\\build.make CMakeFiles/cmTC_f7d59.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-vuy32t'
+        Building C object CMakeFiles/cmTC_f7d59.dir/CheckIncludeFile.c.obj
+        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_f7d59.dir\\CheckIncludeFile.c.obj -c C:\\Users\\andre\\experimetos_vulkan\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vuy32t\\CheckIncludeFile.c
+        Linking C executable cmTC_f7d59.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_f7d59.dir\\link.txt --verbose=1
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_f7d59.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_f7d59.dir/objects.a @CMakeFiles\\cmTC_f7d59.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_f7d59.dir/objects.a -Wl,--no-whole-archive -o cmTC_f7d59.exe -Wl,--out-implib,libcmTC_f7d59.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f7d59.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/andre/experimetos_vulkan/build/CMakeFiles/CMakeScratch/TryCompile-vuy32t'
         
       exitCode: 0
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindDoxygen.cmake:753 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindDoxygen.cmake:937 (_Doxygen_find_doxygen)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindDoxygen.cmake:770 (find_program)"
+      - "C:/mingw64/share/cmake-4.3/Modules/FindDoxygen.cmake:955 (_Doxygen_find_doxygen)"
       - "external/glfw-3.4/docs/CMakeLists.txt:35 (find_package)"
     mode: "program"
     variable: "DOXYGEN_EXECUTABLE"
@@ -3284,8 +3026,9 @@ events:
     names:
       - "doxygen"
     candidate_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -3297,7 +3040,6 @@ events:
       - "C:/Program Files/Calibre2/"
       - "C:/Program Files/PostgreSQL/18/bin/"
       - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/mingw64/bin/"
       - "C:/Users/andre/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/andre/AppData/Roaming/npm/"
       - "C:/Program Files/bin/"
@@ -3306,9 +3048,9 @@ events:
       - "C:/Program Files (x86)/bin/"
       - "C:/Program Files (x86)/sbin/"
       - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
+      - "C:/mingw64/bin/"
+      - "C:/mingw64/sbin/"
+      - "C:/mingw64/"
       - "C:/Program Files (x86)/VulkanEngine/bin/"
       - "C:/Program Files (x86)/VulkanEngine/sbin/"
       - "C:/Program Files (x86)/VulkanEngine/"
@@ -3318,49 +3060,15 @@ events:
       - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
       - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
     searched_directories:
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/doxygen.com"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/doxygen.exe"
-      - "C:/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin/doxygen"
       - "C:/VulkanSDK/1.4.321.1/Bin/doxygen.com"
       - "C:/VulkanSDK/1.4.321.1/Bin/doxygen.exe"
       - "C:/VulkanSDK/1.4.321.1/Bin/doxygen"
-      - "C:/Windows/System32/doxygen.com"
-      - "C:/Windows/System32/doxygen.exe"
-      - "C:/Windows/System32/doxygen"
-      - "C:/Windows/doxygen.com"
-      - "C:/Windows/doxygen.exe"
-      - "C:/Windows/doxygen"
-      - "C:/Windows/System32/wbem/doxygen.com"
-      - "C:/Windows/System32/wbem/doxygen.exe"
-      - "C:/Windows/System32/wbem/doxygen"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen"
-      - "C:/Windows/System32/OpenSSH/doxygen.com"
-      - "C:/Windows/System32/OpenSSH/doxygen.exe"
-      - "C:/Windows/System32/OpenSSH/doxygen"
-      - "C:/Program Files/CMake/bin/doxygen.com"
-      - "C:/Program Files/CMake/bin/doxygen.exe"
-      - "C:/Program Files/CMake/bin/doxygen"
-      - "C:/Program Files/Git/cmd/doxygen.com"
-      - "C:/Program Files/Git/cmd/doxygen.exe"
-      - "C:/Program Files/Git/cmd/doxygen"
-      - "C:/Program Files/nodejs/doxygen.com"
-      - "C:/Program Files/nodejs/doxygen.exe"
-      - "C:/Program Files/nodejs/doxygen"
-      - "C:/Program Files/Calibre2/doxygen.com"
-      - "C:/Program Files/Calibre2/doxygen.exe"
-      - "C:/Program Files/Calibre2/doxygen"
-      - "C:/Program Files/PostgreSQL/18/bin/doxygen.com"
-      - "C:/Program Files/PostgreSQL/18/bin/doxygen.exe"
-      - "C:/Program Files/PostgreSQL/18/bin/doxygen"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/doxygen.com"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
-      - "C:/Users/andre/AppData/Local/Microsoft/WindowsApps/doxygen"
       - "C:/mingw64/bin/doxygen.com"
     found: "C:/mingw64/bin/doxygen.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\mingw64\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.16.8-hotspot\\bin"
         - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\WINDOWS\\system32"
@@ -3382,6 +3090,6 @@ events:
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
+        - "C:/mingw64"
         - "C:/Program Files (x86)/VulkanEngine"
 ...
