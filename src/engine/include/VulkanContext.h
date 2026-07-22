@@ -7,13 +7,15 @@
 
 class VulkanContext
 {
-    struct QueueFamilyIndices
+   struct QueueFamilyIndices
 {
     std::optional<uint32_t> graphicsFamily;
+    std::optional<uint32_t> presentFamily;
 
     bool isComplete() const
     {
-        return graphicsFamily.has_value();
+        return graphicsFamily.has_value() &&
+               presentFamily.has_value();
     }
 };
     
@@ -38,5 +40,6 @@ private:
 
     VkDevice device = VK_NULL_HANDLE;
     VkQueue graphicsQueue = VK_NULL_HANDLE;
+    VkQueue presentQueue = VK_NULL_HANDLE;
     SwapChain swapChain;
 };

@@ -242,6 +242,7 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/VulkanContext.cpp.obj: C:/Users/andre
   C:/mingw64/include/c++/16.1.0/cstddef \
   C:/mingw64/include/c++/16.1.0/cstdio \
   C:/mingw64/include/c++/16.1.0/cstdlib \
+  C:/mingw64/include/c++/16.1.0/cstring \
   C:/mingw64/include/c++/16.1.0/cwchar \
   C:/mingw64/include/c++/16.1.0/debug/assertions.h \
   C:/mingw64/include/c++/16.1.0/debug/debug.h \
@@ -296,12 +297,14 @@ CMakeFiles/VulkanEngine.dir/src/engine/cpp/VulkanContext.cpp.obj: C:/Users/andre
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/wconio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h
@@ -412,6 +415,10 @@ CMakeFiles/VulkanEngine.dir/src/main.cpp.obj: C:/Users/andre/experimetos_vulkan/
 
 C:/Users/andre/experimetos_vulkan/src/main.cpp:
 
+C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/mingw64/include/c++/16.1.0/cstring:
+
 C:/mingw64/include/c++/16.1.0/bits/stl_tree.h:
 
 C:/mingw64/include/c++/16.1.0/bits/stl_multiset.h:
@@ -503,6 +510,8 @@ C:/mingw64/include/c++/16.1.0/bits/erase_if.h:
 C:/mingw64/include/c++/16.1.0/stdlib.h:
 
 C:/mingw64/include/c++/16.1.0/bits/enable_special_members.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/string.h:
 
 C:/mingw64/include/c++/16.1.0/optional:
 
