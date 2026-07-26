@@ -15,17 +15,32 @@ class SwapChain
 };
 public:
     void initialize(
-    VkPhysicalDevice physicalDevice,
-    VkDevice device,
-    VkSurfaceKHR surface
-);
+        VkPhysicalDevice physicalDevice,
+        VkDevice device,
+        VkSurfaceKHR surface,
+        GLFWwindow* window
+    );
 
     void cleanup();
     
 private:
     SwapChainSupportDetails querySwapChainSupport();
+
+    VkSurfaceFormatKHR chooseSurfaceFormat(
+        const std::vector<VkSurfaceFormatKHR>& availableFormats
+    );
+
+    VkPresentModeKHR choosePresentMode(
+        const std::vector<VkPresentModeKHR>& availablePresentModes
+    );
+
+    VkExtent2D chooseExtent(
+        const VkSurfaceCapabilitiesKHR& capabilities
+    );
+
     VkSwapchainKHR swapChain = VK_NULL_HANDLE;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     VkDevice device = VK_NULL_HANDLE;
     VkSurfaceKHR surface = VK_NULL_HANDLE;
+    GLFWwindow* window = nullptr;
 };
