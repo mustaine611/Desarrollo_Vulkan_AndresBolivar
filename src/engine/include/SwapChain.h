@@ -38,7 +38,13 @@ private:
         const VkSurfaceCapabilitiesKHR& capabilities
     );
 
+    void createSwapChain();
+    void getSwapChainImages();
+
     VkSwapchainKHR swapChain = VK_NULL_HANDLE;
+
+    std::vector<VkImage> swapChainImages;
+
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     VkDevice device = VK_NULL_HANDLE;
     VkSurfaceKHR surface = VK_NULL_HANDLE;

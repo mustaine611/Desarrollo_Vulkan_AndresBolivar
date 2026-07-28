@@ -1,6 +1,7 @@
 #include "SwapChain.h"
 #include <vector>
 #include <algorithm>
+#include <stdexcept>
 
 void SwapChain::initialize(
     VkPhysicalDevice physicalDevice,
@@ -14,6 +15,8 @@ void SwapChain::initialize(
     this->window = window;
 
     SwapChainSupportDetails support = querySwapChainSupport();
+    createSwapChain();
+    getSwapChainImages();
 }
 
 SwapChain::SwapChainSupportDetails
@@ -140,6 +143,102 @@ SwapChain::chooseExtent(
             capabilities.maxImageExtent.height);
 
     return actualExtent;
+}
+
+void SwapChain::createSwapChain()
+{
+    SwapChainSupportDetails support =
+        querySwapChainSupport();
+
+    VkSurfaceFormatKHR surfaceFormat =
+        chooseSurfaceFormat(support.formats);
+
+    VkPresentModeKHR presentMode =
+        choosePresentMode(support.presentModes);
+
+    VkExtent2D extent =
+        chooseExtent(support.capabilities);
+
+    uint32_t imageCount =
+        support.capabilities.minImageCount + 1;
+
+    if (support.capabilities.maxImageCount > 0 &&
+        imageCount > support.capabilities.maxImageCount)
+    {
+        imageCount = support.capabilities.maxImageCount;
+    }
+
+    VkSwapchainCreateInfoKHR createInfo{};
+
+    createInfo.sType =
+        VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR;
+
+    createInfo.surface = surface;
+
+    createInfo.minImageCount = imageCount;
+
+    createInfo.imageFormat =
+        surfaceFormat.format;
+
+    createInfo.imageColorSpace =
+        surfaceFormat.colorSpace;
+
+    createInfo.imageExtent =
+        extent;
+
+    createInfo.imageArrayLayers = 1;
+
+    createInfo.imageUsage =
+        VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT;
+
+    createInfo.imageSharingMode =
+        VK_SHARING_MODE_EXCLUSIVE;
+
+    createInfo.preTransform =
+        support.capabilities.currentTransform;
+
+    createInfo.compositeAlpha =
+        VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR;
+
+    createInfo.presentMode =
+        presentMode;
+
+    createInfo.clipped =
+        VK_TRUE;
+
+    createInfo.oldSwapchain =
+        VK_NULL_HANDLE;
+
+    if (vkCreateSwapchainKHR(
+            device,
+            &createInfo,
+            nullptr,
+            &swapChain) != VK_SUCCESS)
+    {
+        throw std::runtime_error(
+            "No se pudo crear la Swap Chain.");
+    }
+}
+
+void SwapChain::getSwapChainImages()
+{
+    uint32_t imageCount = 0;
+
+    vkGetSwapchainImagesKHR(
+        device,
+        swapChain,
+        &imageCount,
+        nullptr
+    );
+
+    swapChainImages.resize(imageCount);
+
+    vkGetSwapchainImagesKHR(
+        device,
+        swapChain,
+        &imageCount,
+        swapChainImages.data()
+    );
 }
 
 void SwapChain::cleanup()
