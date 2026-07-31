@@ -17,7 +17,10 @@ void SwapChain::initialize(
     SwapChainSupportDetails support = querySwapChainSupport();
     createSwapChain();
     getSwapChainImages();
+    createImageViews();
 }
+
+
 
 SwapChain::SwapChainSupportDetails
 SwapChain::querySwapChainSupport()
@@ -153,6 +156,8 @@ void SwapChain::createSwapChain()
     VkSurfaceFormatKHR surfaceFormat =
         chooseSurfaceFormat(support.formats);
 
+    swapChainImageFormat = surfaceFormat.format;    
+
     VkPresentModeKHR presentMode =
         choosePresentMode(support.presentModes);
 
@@ -241,7 +246,89 @@ void SwapChain::getSwapChainImages()
     );
 }
 
+void SwapChain::createImageViews()
+{
+    swapChainImageViews.resize(
+        swapChainImages.size());
+
+    for (size_t i = 0;
+         i < swapChainImages.size();
+         i++)
+    {
+        VkImageViewCreateInfo createInfo{};
+
+        createInfo.sType =
+            VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
+
+        createInfo.image =
+            swapChainImages[i];
+
+        createInfo.viewType =
+            VK_IMAGE_VIEW_TYPE_2D;
+
+        createInfo.format = 
+            swapChainImageFormat;
+
+        createInfo.components.r =
+            VK_COMPONENT_SWIZZLE_IDENTITY;
+
+        createInfo.components.g =
+            VK_COMPONENT_SWIZZLE_IDENTITY;
+
+        createInfo.components.b =
+            VK_COMPONENT_SWIZZLE_IDENTITY;
+
+        createInfo.components.a =
+            VK_COMPONENT_SWIZZLE_IDENTITY;
+
+        createInfo.subresourceRange.aspectMask =
+            VK_IMAGE_ASPECT_COLOR_BIT;
+
+        createInfo.subresourceRange.baseMipLevel = 0;
+        createInfo.subresourceRange.levelCount = 1;
+
+        createInfo.subresourceRange.baseArrayLayer = 0;
+        createInfo.subresourceRange.layerCount = 1;
+
+        if (vkCreateImageView(
+                device,
+                &createInfo,
+                nullptr,
+                &swapChainImageViews[i]) != VK_SUCCESS)
+        {
+            throw std::runtime_error(
+                "No se pudo crear un Image View.");
+        }
+    }
+}
+
+VkFormat SwapChain::getImageFormat() const
+{
+    return swapChainImageFormat;
+}
+
 void SwapChain::cleanup()
 {
+    for (VkImageView imageView :
+         swapChainImageViews)
+    {
+        vkDestroyImageView(
+            device,
+            imageView,
+            nullptr);
+    }
 
+    if (device != VK_NULL_HANDLE)
+    {
+    
+        vkDestroyDevice(device, nullptr);
+    }
+
+    if (swapChain != VK_NULL_HANDLE)
+    {
+        vkDestroySwapchainKHR(
+            device,
+            swapChain,
+            nullptr);
+    }
 }

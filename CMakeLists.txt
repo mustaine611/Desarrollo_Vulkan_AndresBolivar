@@ -13,6 +13,8 @@ add_executable(VulkanEngine
     src/main.cpp
     src/engine/cpp/Application.cpp
     src/engine/cpp/VulkanContext.cpp
+    src/engine/cpp/SwapChain.cpp
+    src/engine/cpp/RenderPass.cpp
 )
 
 target_include_directories(VulkanEngine PRIVATE

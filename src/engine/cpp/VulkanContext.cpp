@@ -11,12 +11,25 @@ void VulkanContext::initialize(GLFWwindow* window)
     createSurface(window);
     pickPhysicalDevice();
     createLogicalDevice();
+
+    swapChain.initialize(
+        physicalDevice,
+        device,
+        surface,
+        window
+    );
+
+    renderPass.initialize(
+        device,
+        swapChain.getImageFormat()
+    );
 }
 
 void VulkanContext::cleanup()
 {
     if (device != VK_NULL_HANDLE)
     {
+        swapChain.cleanup();
         vkDestroyDevice(device, nullptr);
     }
 
