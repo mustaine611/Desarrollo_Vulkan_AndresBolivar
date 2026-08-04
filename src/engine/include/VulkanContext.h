@@ -5,6 +5,7 @@
 #include <optional>
 #include "SwapChain.h"
 #include "RenderPass.h"
+#include "GraphicsPipeline.h"
 
 class VulkanContext
 {
@@ -44,4 +45,5 @@ class VulkanContext
         VkQueue presentQueue = VK_NULL_HANDLE;
         SwapChain swapChain;
         RenderPass renderPass;
+        GraphicsPipeline graphicsPipeline;
 };

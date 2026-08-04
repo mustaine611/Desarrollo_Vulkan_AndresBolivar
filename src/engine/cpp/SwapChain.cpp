@@ -20,8 +20,6 @@ void SwapChain::initialize(
     createImageViews();
 }
 
-
-
 SwapChain::SwapChainSupportDetails
 SwapChain::querySwapChainSupport()
 {
@@ -161,9 +159,8 @@ void SwapChain::createSwapChain()
     VkPresentModeKHR presentMode =
         choosePresentMode(support.presentModes);
 
-    VkExtent2D extent =
-        chooseExtent(support.capabilities);
-
+    VkExtent2D extent = chooseExtent(support.capabilities);
+    swapChainExtent = extent;
     uint32_t imageCount =
         support.capabilities.minImageCount + 1;
 
@@ -318,12 +315,7 @@ void SwapChain::cleanup()
             nullptr);
     }
 
-    if (device != VK_NULL_HANDLE)
-    {
     
-        vkDestroyDevice(device, nullptr);
-    }
-
     if (swapChain != VK_NULL_HANDLE)
     {
         vkDestroySwapchainKHR(
@@ -331,4 +323,9 @@ void SwapChain::cleanup()
             swapChain,
             nullptr);
     }
+}
+
+VkExtent2D SwapChain::getExtent() const
+{
+    return swapChainExtent;
 }

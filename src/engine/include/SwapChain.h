@@ -22,6 +22,7 @@ class SwapChain
         );
         void cleanup();
         VkFormat getImageFormat() const;
+        VkExtent2D getExtent() const;
         
     
     private:
@@ -53,4 +54,5 @@ class SwapChain
         VkDevice device = VK_NULL_HANDLE;
         VkSurfaceKHR surface = VK_NULL_HANDLE;
         GLFWwindow* window = nullptr;
+        VkExtent2D swapChainExtent{};
 };

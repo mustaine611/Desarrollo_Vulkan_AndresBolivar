@@ -23,12 +23,21 @@ void VulkanContext::initialize(GLFWwindow* window)
         device,
         swapChain.getImageFormat()
     );
+
+    graphicsPipeline.initialize(
+        device,
+        swapChain.getExtent(),
+        renderPass.getRenderPass()
+    );
 }
 
 void VulkanContext::cleanup()
 {
+
+
     if (device != VK_NULL_HANDLE)
     {
+        graphicsPipeline.cleanup();
         swapChain.cleanup();
         vkDestroyDevice(device, nullptr);
     }
