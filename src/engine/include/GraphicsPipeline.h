@@ -2,6 +2,8 @@
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
+#include <vector>
+#include <string>
 
 class GraphicsPipeline{
     public:
@@ -21,6 +23,8 @@ class GraphicsPipeline{
         //se debe especificar el tipo de retorno que en este caso es "void"
         void createPipelineLayout();
         void createGraphicsPipeline();
+        static std::vector<char> readFile(const std::string& filename);
+        VkShaderModule createShaderModule(const std::vector<char>& code);
 
         //conviene inicializar los miembros privados con VK_NULL_HANDLE
         VkDevice device = VK_NULL_HANDLE;

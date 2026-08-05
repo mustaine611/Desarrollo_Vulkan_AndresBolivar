@@ -28,6 +28,8 @@ void VulkanContext::initialize(GLFWwindow* window)
         device,
         swapChain.getExtent(),
         renderPass.getRenderPass()
+
+        //todavia no hemos llamado al .readfile
     );
 }
 
