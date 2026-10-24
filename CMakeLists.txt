@@ -16,6 +16,7 @@ add_executable(VulkanEngine
     src/engine/cpp/SwapChain.cpp
     src/engine/cpp/RenderPass.cpp
     src/engine/cpp/GraphicsPipeline.cpp
+    src/engine/cpp/Framebuffer.cpp
 )
 
 target_include_directories(VulkanEngine PRIVATE

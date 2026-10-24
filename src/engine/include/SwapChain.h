@@ -23,7 +23,7 @@ class SwapChain
         void cleanup();
         VkFormat getImageFormat() const;
         VkExtent2D getExtent() const;
-        
+        const std::vector<VkImageView>& getImageViews() const;
     
     private:
         SwapChainSupportDetails querySwapChainSupport();

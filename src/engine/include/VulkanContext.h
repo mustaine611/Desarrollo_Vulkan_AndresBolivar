@@ -6,6 +6,7 @@
 #include "SwapChain.h"
 #include "RenderPass.h"
 #include "GraphicsPipeline.h"
+#include "Framebuffer.h"
 
 class VulkanContext
 {
@@ -46,4 +47,5 @@ class VulkanContext
         SwapChain swapChain;
         RenderPass renderPass;
         GraphicsPipeline graphicsPipeline;
+        Framebuffer framebuffer;
 };

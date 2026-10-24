@@ -304,6 +304,9 @@ VkFormat SwapChain::getImageFormat() const
     return swapChainImageFormat;
 }
 
+
+//aqui solo estoy implementando el metodo cleanup, no lo estoy ejecutando de una vez
+//asi que no se preocupe por el orden, yo creo que el orden de ejecucuion importa en el Vulkancontext
 void SwapChain::cleanup()
 {
     for (VkImageView imageView :
@@ -328,4 +331,9 @@ void SwapChain::cleanup()
 VkExtent2D SwapChain::getExtent() const
 {
     return swapChainExtent;
+}
+
+const std::vector<VkImageView>& SwapChain::getImageViews() const
+{
+    return swapChainImageViews;
 }

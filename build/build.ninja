@@ -103,6 +103,15 @@ build CMakeFiles/VulkanEngine.dir/src/engine/cpp/GraphicsPipeline.cpp.obj: CXX_C
   OBJECT_FILE_DIR = CMakeFiles\VulkanEngine.dir\src\engine\cpp
   TARGET_SUPPORT_DIR = CMakeFiles\VulkanEngine.dir
 
+build CMakeFiles/VulkanEngine.dir/src/engine/cpp/Framebuffer.cpp.obj: CXX_COMPILER__VulkanEngine_unscanned_debug C$:/Users/andre/experimetos_vulkan/src/engine/cpp/Framebuffer.cpp || cmake_object_order_depends_target_VulkanEngine
+  CONFIG = debug
+  DEP_FILE = CMakeFiles\VulkanEngine.dir\src\engine\cpp\Framebuffer.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Users/andre/experimetos_vulkan/src/engine/include -IC:/Users/andre/experimetos_vulkan/external/glfw-3.4/include -isystem C:/VulkanSDK/1.4.321.1/include
+  OBJECT_DIR = CMakeFiles\VulkanEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles\VulkanEngine.dir\src\engine\cpp
+  TARGET_SUPPORT_DIR = CMakeFiles\VulkanEngine.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target VulkanEngine
@@ -111,7 +120,7 @@ build CMakeFiles/VulkanEngine.dir/src/engine/cpp/GraphicsPipeline.cpp.obj: CXX_C
 #############################################
 # Link the executable VulkanEngine.exe
 
-build VulkanEngine.exe: CXX_EXECUTABLE_LINKER__VulkanEngine_debug CMakeFiles/VulkanEngine.dir/src/main.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/VulkanContext.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/SwapChain.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/RenderPass.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/GraphicsPipeline.cpp.obj | external/glfw-3.4/src/libglfw3.a C$:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib || external/glfw-3.4/src/libglfw3.a
+build VulkanEngine.exe: CXX_EXECUTABLE_LINKER__VulkanEngine_debug CMakeFiles/VulkanEngine.dir/src/main.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/Application.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/VulkanContext.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/SwapChain.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/RenderPass.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/GraphicsPipeline.cpp.obj CMakeFiles/VulkanEngine.dir/src/engine/cpp/Framebuffer.cpp.obj | external/glfw-3.4/src/libglfw3.a C$:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib || external/glfw-3.4/src/libglfw3.a
   CONFIG = debug
   FLAGS = -g
   LINK_LIBRARIES = external/glfw-3.4/src/libglfw3.a  C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

@@ -285,6 +285,23 @@ void GraphicsPipeline::createGraphicsPipeline()
         pipelineInfo.basePipelineIndex =
             -1;
 
+        if (vkCreateGraphicsPipelines(
+        device,
+        VK_NULL_HANDLE,
+        1,
+        &pipelineInfo,
+        nullptr,
+        &graphicsPipeline) != VK_SUCCESS)
+        {
+            throw std::runtime_error(
+                "No se pudo crear el Graphics Pipeline."
+            );
+        }
+
+        vkDestroyShaderModule(device,fragShaderModule,nullptr);
+
+        vkDestroyShaderModule(device,vertShaderModule,nullptr);
+
     }
 
 
