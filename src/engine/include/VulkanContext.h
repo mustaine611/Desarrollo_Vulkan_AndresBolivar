@@ -37,6 +37,16 @@ class VulkanContext
         bool checkDeviceExtensionSupport(VkPhysicalDevice device);
 
     private:
+        VkDebugUtilsMessengerEXT debugMessenger = VK_NULL_HANDLE;
+
+        void setupDebugMessenger();
+
+        static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(
+            VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
+            VkDebugUtilsMessageTypeFlagsEXT messageType,
+            const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
+            void* pUserData
+        );
         VkInstance instance = VK_NULL_HANDLE;
         VkSurfaceKHR surface = VK_NULL_HANDLE;
         VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;

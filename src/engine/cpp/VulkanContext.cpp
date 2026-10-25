@@ -4,10 +4,58 @@
 #include <vector>
 #include <set>
 #include <cstring>
+#include <iostream>
+#include <cstdio>
+
+VKAPI_ATTR VkBool32 VKAPI_CALL VulkanContext::debugCallback(
+    VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
+    VkDebugUtilsMessageTypeFlagsEXT messageType,
+    const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
+    void* pUserData)
+{
+    std::cerr << "VALIDATION: "
+              << pCallbackData->pMessage
+              << std::endl;
+
+    return VK_FALSE;
+}
+
+void VulkanContext::setupDebugMessenger()
+{
+    VkDebugUtilsMessengerCreateInfoEXT createInfo{};
+
+    createInfo.sType =
+        VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT;
+
+    createInfo.messageSeverity =
+        VK_DEBUG_UTILS_MESSAGE_SEVERITY_WARNING_BIT_EXT |
+        VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT;
+
+    createInfo.messageType =
+        VK_DEBUG_UTILS_MESSAGE_TYPE_GENERAL_BIT_EXT |
+        VK_DEBUG_UTILS_MESSAGE_TYPE_VALIDATION_BIT_EXT |
+        VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT;
+
+    createInfo.pfnUserCallback = debugCallback;
+
+    auto func = reinterpret_cast<PFN_vkCreateDebugUtilsMessengerEXT>(
+        vkGetInstanceProcAddr(
+            instance,
+            "vkCreateDebugUtilsMessengerEXT"
+        )
+    );
+
+    if (func == nullptr ||
+        func(instance, &createInfo, nullptr, &debugMessenger) != VK_SUCCESS)
+    {
+        throw std::runtime_error("No se pudo crear el Debug Messenger.");
+    }
+}
 
 void VulkanContext::initialize(GLFWwindow* window)
 {
     createInstance();
+    setupDebugMessenger();
     createSurface(window);
     pickPhysicalDevice();
     createLogicalDevice();
@@ -31,15 +79,23 @@ void VulkanContext::initialize(GLFWwindow* window)
 
         //todavia no hemos llamado al .readfile
     );
+
+    framebuffer.initialize(
+        device,
+        renderPass.getRenderPass(),
+        swapChain.getExtent(),
+        swapChain.getImageViews()
+    );
 }
 
 void VulkanContext::cleanup()
 {
 
-
     if (device != VK_NULL_HANDLE)
     {
+        framebuffer.cleanup();
         graphicsPipeline.cleanup();
+        renderPass.cleanup();
         swapChain.cleanup();
         vkDestroyDevice(device, nullptr);
     }
@@ -47,6 +103,21 @@ void VulkanContext::cleanup()
     if (surface != VK_NULL_HANDLE)
     {
         vkDestroySurfaceKHR(instance, surface, nullptr);
+    }
+
+    if (debugMessenger != VK_NULL_HANDLE)
+    {
+        auto func = reinterpret_cast<PFN_vkDestroyDebugUtilsMessengerEXT>(
+            vkGetInstanceProcAddr(
+                instance,
+                "vkDestroyDebugUtilsMessengerEXT"
+            )
+        );
+
+        if (func != nullptr)
+        {
+            func(instance, debugMessenger, nullptr);
+        }
     }
 
     if (instance != VK_NULL_HANDLE)
@@ -72,13 +143,27 @@ void VulkanContext::createInstance()
     createInfo.pApplicationInfo = &appInfo;
 
     uint32_t glfwExtensionCount = 0;
+
     const char** glfwExtensions =
-        glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+    glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
 
-    createInfo.enabledExtensionCount = glfwExtensionCount;
-    createInfo.ppEnabledExtensionNames = glfwExtensions;
+    std::vector<const char*> extensions(
+            glfwExtensions,
+            glfwExtensions + glfwExtensionCount
+    );
 
-    createInfo.enabledLayerCount = 0;
+    extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
+
+    createInfo.enabledExtensionCount = static_cast<uint32_t>(extensions.size());
+
+    createInfo.ppEnabledExtensionNames = extensions.data();
+
+    const char* validationLayers[] = {
+    "VK_LAYER_KHRONOS_validation"
+    };
+
+    createInfo.enabledLayerCount = 1;
+    createInfo.ppEnabledLayerNames = validationLayers;
 
     if (vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS)
     {

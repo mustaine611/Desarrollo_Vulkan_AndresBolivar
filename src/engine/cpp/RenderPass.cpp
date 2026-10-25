@@ -105,15 +105,19 @@ void RenderPass::createRenderPass()
     renderPassInfo.pDependencies = &dependency;
 
 
-    // 6. Solicitar a Vulkan la creación del recurso.
-    if (vkCreateRenderPass(
-            device,
-            &renderPassInfo,
-            nullptr,
-            &renderPass) != VK_SUCCESS)
+    // 6. Solicitar a Vulkan la creacion del recurso.
+    VkResult result = vkCreateRenderPass(
+        device,
+        &renderPassInfo,
+        nullptr,
+        &renderPass
+    );
+
+    if (result != VK_SUCCESS)
     {
         throw std::runtime_error(
-            "No se pudo crear el RenderPass.");
+            "No se pudo crear el RenderPass."
+        );
     }
 }
 
